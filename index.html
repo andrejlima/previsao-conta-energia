@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Previsão de Conta de Energia </title>
+  <link rel="stylesheet" href="style/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navigation">
+    <nav><a href="https://github.com/andrejlima/#">Página do Projeto</a></nav>
+    <nav><a href="https://github.com/andrejlima">Perfil no GitHub</a></nav>
+  </nav>
+  <h1>PREVISÃO DE CONTA DE ENERGIA</h1>
+  <br>
+  <div class="container">
+    <div class="coll">Data Leitura da conta
+      <input type="date" id="dataReferencia" name="date" >
+    </div>
+
+    <div class="coll">Leitura da conta
+      <input type="number" id="LeituraReferencia" name="form" class="form">
+    </div>
+
+    <div class="coll">Leitura Hoje
+      <input type="number" id="LeituraAtual" name="form" class="form">
+    </div>
+
+    <div class="coll">Valor Previsto da próxima fatura
+      <div id="result" class="coll">R$ 0,00</div>
+    </div>
+  </div>
+
+  <div class="button">
+    <button id="btn" onclick="calculo()">Calcular</button>
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>
