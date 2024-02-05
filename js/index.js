@@ -32,7 +32,7 @@ function calculo() {
     let dateReference = dateRef.value;
 
     //salvar dados nos cookies
-    
+
     let dateRefJason = JSON.stringify(dateReference);
     let leitRefJason = JSON.stringify(leitReference);
     let leitActualJason = JSON.stringify(leitActual);
@@ -42,7 +42,7 @@ function calculo() {
     document.cookie = "leitActual=" + encodeURIComponent(leitActualJason) + "; expires=" + new Date(new Date().getTime() + 60 * 24 * 60 * 60 * 1000).toUTCString() + "; path=/";
 
     //calculo do resultado
-    
+
     let resultFinal = (difLeit / diferencaEmDias * 30).toFixed(0);
 
     result.innerHTML = `R$ ${resultFinal}`;
