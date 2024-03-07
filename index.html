@@ -23,7 +23,7 @@
   <br>
   <div class="container">
     <div class="coll">Data Leitura da conta
-      <input type="date" id="dataReferencia" name="date" >
+      <input type="date" id="dataReferencia" name="date">
     </div>
 
     <div class="coll">Leitura da conta
@@ -34,7 +34,12 @@
       <input type="number" id="LeituraAtual" name="form" class="form">
     </div>
 
-    <div class="coll">Valor Previsto da próxima fatura
+    <div class="coll">Valor médio do kw/h
+      <input type="text" id="mediaKwh" name="form" class="form">
+      <button onclick="valorMedio()" id="vlMedio">Para descobrir clique aqui</button>
+    </div>
+
+    <div class="coll" id="resultMobile">Valor Previsto da próxima fatura
       <div id="result" class="coll">R$ 0,00</div>
     </div>
   </div>
@@ -45,13 +50,13 @@
   <script>
     // Verifica se o parâmetro de consulta "?v=" não está presente na URL
     if (!window.location.search.includes('v=')) {
-        // Adiciona um parâmetro de consulta único (timestamp) à URL
-        const novaURL = `${window.location.href}?v=${Date.now()}`;
-        
-        // Redireciona o navegador para a nova URL
-        window.location.href = novaURL;
+      // Adiciona um parâmetro de consulta único (timestamp) à URL
+      const novaURL = `${window.location.href}?v=${Date.now()}`;
+
+      // Redireciona o navegador para a nova URL
+      window.location.href = novaURL;
     }
-</script>
+  </script>
   <script src="js/index.js"></script>
 </body>
 
