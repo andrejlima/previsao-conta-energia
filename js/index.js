@@ -38,16 +38,17 @@ function valorMedio() {
         if (mensalKwh === null) {
             return;
         }
-        // Convertendo os valores para números
-        valorMensal = parseFloat(valorMensal);
-        mensalKwh = parseInt(mensalKwh);
-
-        let mediaKwhValue = valorMensal / mensalKwh;
-
-        alert('seu valor médio é: ' + mediaKwhValue);
-
-        document.getElementById("mediaKwh").value = mediaKwhValue;
     }
+
+    valorMensal = parseFloat(valorMensal);
+    mensalKwh = parseInt(mensalKwh);
+
+    let mediaKwhValue = valorMensal / mensalKwh;
+
+    alert('seu valor médio é: ' + mediaKwhValue);
+
+    document.getElementById("mediaKwh").value = mediaKwhValue;
+
 }
 
 
