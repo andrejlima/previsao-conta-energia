@@ -45,12 +45,11 @@ function valorMedio() {
 
     let mediaKwhValue = valorMensal / mensalKwh;
 
-    alert('seu valor médio é: ' + mediaKwhValue);
+    alert('seu valor médio é: ' + (mediaKwhValue).toFixed(2));
 
-    document.getElementById("mediaKwh").value = mediaKwhValue;
+    document.getElementById("mediaKwh").value = (mediaKwhValue).toFixed(2);
 
 }
-
 
 // Função para formatar o campo conforme o usuário digita
 function formatarCampo() {
@@ -80,7 +79,6 @@ function formatarCampo() {
     }
 
 }
-
 
 // Adicionar evento de entrada ao campo para chamar a função de formatação
 document.getElementById("mediaKwh").addEventListener("input", formatarCampo);
@@ -127,3 +125,16 @@ function calculo() {
 
     result.innerHTML = `R$ ${resultFinal}`;
 }
+
+//Correção exibição de data no firefox
+
+function detectarNavegador() {
+    const userAgent = window.navigator.userAgent;
+    if (userAgent.indexOf("Firefox") !== -1) {
+        dateRef.style.textAlign = "center";
+        dateRef.style.width = "7.3rem";
+        dateRef.style.fontSize = "0.85rem";
+    }
+}
+
+detectarNavegador();

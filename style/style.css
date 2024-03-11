@@ -1,3 +1,7 @@
+html {
+    font-size: 20px;
+}
+
 * {
     border: 0;
     margin: 0;
@@ -14,9 +18,9 @@ input[type="number"] {
 }
 
 input {
-    width: 200px;
-    padding: 5px;
-    margin-bottom: 5px;
+    width: 10rem;
+    padding: 0.25rem;
+    margin-bottom: 0.25rem;
 }
 
 body {
@@ -32,14 +36,15 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 .form {
-    border: 1px solid black;
+    border: 0.05rem solid black;
     text-align: center;
-    width: 70px;
-    height: 10px;
+    width: 3.5rem;
+    height: 0.5rem;
+    font-size: 0.85rem;
 }
 
 #result {
@@ -48,46 +53,47 @@ body {
 
 #dataReferencia {
     text-align: center;
-    width: 110px;
-    font-size: 15px;
+    width: 6.2rem;
+    font-size: 0.85rem;
 }
 
 #mediaKwh {
     text-align: center;
-    width: 80px;
+    width: 4rem;
 }
 
 #vlMedio {
     text-align: center;
-    margin-top: 18px;
-    border: 2px solid black;
+    margin-top: 0.9rem;
+    border: 0.1rem solid black;
     cursor: pointer;
     display: block;
-    height: 40px;
-    width: 150px;
+    height: 2rem;
+    width: 7.5rem;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 0.5rem;
 }
 
 .button {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 1.5rem;
 }
 
 #btn {
     cursor: pointer;
-    border-radius: 90px;
-    height: 40px;
-    width: 100px;
+    border-radius: 4.5rem;
+    height: 3.25rem;
+    width: 6.25rem;
     background-color: white;
-    border: 2px solid black;
+    border: 0.1rem solid black;
+    font-size: 1.05rem;
 }
 
 h1 {
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .navigation a {
@@ -96,7 +102,7 @@ h1 {
 }
 
 .navigation nav {
-    margin: 10px;
+    margin: 0.5rem;
 }
 
 .navigation {
@@ -105,8 +111,8 @@ h1 {
     list-style-type: none;
     text-transform: uppercase;
     background-color: #24292f;
-    height: 50px;
-    font-size: 23px;
+    height: 2.5rem;
+    font-size: 1.15rem;
 }
 
 .navigation a:hover {
@@ -114,10 +120,17 @@ h1 {
     color: grey;
 }
 
+@media (max-width: 770px) {
+    .container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
 @media (max-width: 590px) {
     .navigation {
-        height: 45px;
-        font-size: 20px;
+        height: 2.25rem;
+        font-size: 0.95rem;
     }
 
     .container {
@@ -129,68 +142,64 @@ h1 {
         display: flex;
         align-items: center;
     }
-}
-
-@media (max-width: 590px) {
-    .navigation {
-        height: 45px;
-        font-size: 19px;
-    }
 
     h1 {
-        font-size: 27px;
+        font-size: 1.72rem;
+        white-space: pre-line;
     }
 
     #resultMobile {
-        margin-top: 15px;
+        margin-top: 0.75rem;
     }
 
     #vlMedio {
-        height: 40px;
-        width: 110px;
-        font-size: 14px;
+        height: 2rem;
+        width: 5.5rem;
+        font-size: 0.7rem;
     }
-
 }
+
 
 @media (max-width: 500px) {
     .navigation {
-        height: 45px;
-        font-size: 19px;
+        height: 2.25rem;
+        font-size: 0.95rem;
     }
 
     h1 {
-        font-size: 26px;
+        font-size: 1.3rem;
     }
 }
 
 @media (max-width: 450px) {
     .navigation {
-        height: 40px;
-        font-size: 18px;
+        height: 2rem;
+        font-size: 0.9rem;
     }
 
     h1 {
-        font-size: 25px;
+        font-size: 1.25rem;
+        white-space: pre-line;
     }
 
 }
 
 @media (max-width: 400px) {
     .navigation {
-        height: 40px;
-        font-size: 16px;
+        height: 2rem;
+        font-size: 0.8rem;
     }
 
 }
 
 @media (max-width: 350px) {
     .navigation {
-        height: 35px;
-        font-size: 14px;
+        height: 1.75rem;
+        font-size: 0.7rem;
     }
 
     h1 {
-        font-size: 18px;
+        font-size: 1.1rem;
+        white-space: pre-line;
     }
 }
